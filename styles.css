@@ -28,11 +28,28 @@ body, html{
     border-radius:1.5rem;
 }
 
+.pType1{
+    color: HSL(184, 14%, 56%);
+}
+
+#bill{
+    color: HSL(189°, 41%, 97%);
+}
+
 .secondSection{
     background-color: hsl(183, 100%, 15%);
     width: 40%;
     margin: 1.5rem;
     border-radius:1.5rem;
+}
+
+.tipAmount{
+    padding-top: 2rem;
+    padding-bottom: 1.75rem;
+}
+
+.tipAmount, .total{
+    padding-left: 2.5rem;
 }
 
 .pType2{
@@ -41,9 +58,29 @@ body, html{
 
 .pType3{
     color: hsl(186, 14%, 43%);
+    line-height: 0;
+    font-size: 0.85rem;
 }
 
+.btnReset{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+    padding-top: 5rem;
+}
 
+#reset{
+    width: 80%;
+    height: 7.5%;
+    border-radius: 0.25rem;
+    border: none;
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    font-family: "Space Mono";
+    font-weight: 700;
+    font-size: 1.5rem;
+}
 
 
 

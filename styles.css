@@ -2,10 +2,46 @@ body, html{
     margin: 0;
     padding: 0;
     background-color: hsl(185, 41%, 84%);
+    font-family: "Space Mono";
 }
 
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
 
+.logo-div{
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+    margin-bottom: 7.5rem;
+}
 
+.hero{
+    background-color: #FFFFFF;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:1.5rem;
+}
+
+.secondSection{
+    background-color: hsl(183, 100%, 15%);
+    width: 40%;
+    margin: 1.5rem;
+    border-radius:1.5rem;
+}
+
+.pType2{
+    color:  hsl(189, 41%, 97%);
+}
+
+.pType3{
+    color: hsl(186, 14%, 43%);
+}
 
 
 

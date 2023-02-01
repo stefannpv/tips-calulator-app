@@ -28,17 +28,42 @@ body, html{
     border-radius:1.5rem;
 }
 
+.firstSection{
+    display:inline-flexbox;
+    justify-content: left;
+    align-items: flex-start;
+    padding-right: 8rem;
+}
+
 .pType1{
     color: HSL(184, 14%, 56%);
+    line-height: 0;
+    font-size: 1.25rem
 }
 
 #bill{
     color: HSL(189°, 41%, 97%);
 }
 
+input{
+    background-color: #D6E4E5;
+    color: HSL(189°, 41%, 97%);
+    border: 0;
+    height: 3rem;
+    width: 100%;
+    border-radius: 0.25rem;
+    margin-bottom: 3rem
+}
+
+.divButton{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr 1fr;
+}
+
 .secondSection{
     background-color: hsl(183, 100%, 15%);
-    width: 40%;
+    width: 30%;
     margin: 1.5rem;
     border-radius:1.5rem;
 }

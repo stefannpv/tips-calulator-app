@@ -25,10 +25,10 @@
 
     <div class="hero">
 
-      <div class="firstSection">
-        <p class="pType1">Bill</p>
+      <div class="leftSection">
+        <p class="pType1 bill">Bill</p>
         
-        <input type="text" id="bill" name="Bill"> 
+        <input type="text" id="bill" name="Bill" value="0" onfocus="this.value=''"> 
         <!-- required
         minlength="1" maxlength="8" size="20"> -->
     
@@ -39,14 +39,15 @@
         <button id="3">15%</button>
         <button id="4">25%</button>
         <button id="5">50%</button>
+        <input type="text" id="customButton" name="Custom" value="Custom" onfocus="this.value=''">
       </div>
-      Custom
     
       <p class="pType1">Number of People</p>
+      <input type="text" id="numberOfPeople" name="numberOfPeople" value="0" onfocus="this.value=''">
       </div>
         
 
-<div class="secondSection">
+<div class="rightSection">
 
     <div class="tipAmount">
         <p class="pType2">Tip Amount</p>
@@ -72,5 +73,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
+
+  <script type="text/javascript" src="scripts.js"></script>
 </body>
 </html>

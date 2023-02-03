@@ -27,8 +27,11 @@
 
       <div class="leftSection">
         <p class="pType1 bill">Bill</p>
-        
-        <input type="text" id="bill" name="Bill" value="0" onfocus="this.value=''"> 
+        <div>
+          <!-- <i src="images\icon-dollar.svg"></i> -->
+          <input type="text" id="bill" name="Bill" value="$                  0" onfocus="this.value=''"> 
+        </div>
+  
         <!-- required
         minlength="1" maxlength="8" size="20"> -->
     
@@ -43,22 +46,31 @@
       </div>
     
       <p class="pType1">Number of People</p>
-      <input type="text" id="numberOfPeople" name="numberOfPeople" value="0" onfocus="this.value=''">
+      <form action="">
+      <div>
+        <input type="text" id="numberOfPeople" name="numberOfPeople" value="0" onfocus="this.value=''">
+      </div>
+    </form>
+
       </div>
         
 
 <div class="rightSection">
 
-    <div class="tipAmount">
+    <div class="rightSectionUpper">
+      <div class="tipAmountLeft">
         <p class="pType2">Tip Amount</p>
         <p class="pType3">/ person</p>
-    </div>
-  
-    <div class="total">
-        <p class="pType2">Total</p>
+        <p class="pType2 pTotal">Total</p>
         <p class="pType3">/ person</p>
-    </div>
-  
+      </div>
+      
+        <div class="tipAmountRight">
+        <h1 class="tipPerPerson">$0.00</h1>
+        <h1 class="tipTotal">$0.00</h1>
+        </div>
+</div>
+
     <div class="btnReset">
         <button id="reset">RESET</button>
     </div>

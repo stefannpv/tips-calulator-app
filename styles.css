@@ -200,6 +200,34 @@ button:focus{
 }
 
 
+@media only screen and (max-width: 600px){
+    .logo-div{
+        display: flex;
+        justify-content: center;
+        margin-top: 10em;
+        margin-bottom: 5em;
+    }
+    
+    .hero{
+        background-color: #FFFFFF;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius:1.5em;
+        margin-bottom: 10em;
+    }
+
+}
+
+
+
+
+
+@media only screen and (max-width: 1024){
+
+}
+
 
 
 

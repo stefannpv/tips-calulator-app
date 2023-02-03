@@ -15,8 +15,8 @@ body, html{
 .logo-div{
     display: flex;
     justify-content: center;
-    margin-top: 10rem;
-    margin-bottom: 7.5rem;
+    margin-top: 10em;
+    margin-bottom: 5em;
 }
 
 .hero{
@@ -32,7 +32,7 @@ body, html{
     display:inline-flexbox;
     justify-content: left;
     align-items: flex-start;
-    padding-right: 8em;
+    padding-right: 1em;
 }
 
 .pType1{
@@ -47,18 +47,21 @@ body, html{
 
 #bill{
     color: HSL(189°, 41%, 97%);
-    text-align: left;
+    text-align: right;
     color: hsl(183, 100%, 15%);
     font-family: "Space Mono";
     font-size: ;
     background-color: #f3f8fb;
     color: HSL(189°, 41%, 97%);
     border: 0;
-    height: 3em;
-    width: 27em;
+    width: 13em;
+    height: 1.75em;
+    padding-right: 1em;
     border-radius: 0.25em;
     margin-bottom: 2em;
 }
+
+input[type='text'] { font-size: 24px; }
 
 .divButtons{
     display: grid;
@@ -95,50 +98,52 @@ button{
 }
 
 #numberOfPeople{
-    margin-bottom: 3em;
-    text-align: left;
+    margin-bottom: 2em;
+    text-align: right;
     font-family: "Space Mono";
     font-size: ;
     background-color: #f3f8fb;
     color: hsl(183, 100%, 15%);
     border: 0;
-    height: 3em;
-    width: 27em;
+    height: 1.75em;
+    width: 13em;
     border-radius: 0.25em;
+    padding-right: 1em;
 }
 
 .rightSection{
     background-color: hsl(183, 100%, 15%);
-    width: 30%;
-    margin: 1.5rem;
-    border-radius:1.5rem;
+    width: 25em;
+    height: 25em;
+    margin-left: 2em;
+    border-radius:1.25em;
 }
 
 .tipAmount{
-    padding-top: 2rem;
-    padding-bottom: 1.75rem;
+    padding-top: 2.75em;
+    padding-bottom: 1.75em;
 }
 
 .tipAmount, .total{
-    padding-left: 2.5rem;
+    padding-left: 2.5em;
 }
 
 .pType2{
-    color:  hsl(189, 41%, 97%);
+    color:  #F4FAFA;
+    font-size: 0.85em;
 }
 
 .pType3{
     color: hsl(186, 14%, 43%);
     line-height: 0;
-    font-size: 0.85rem;
+    font-size: 0.85em;
 }
 
 .btnReset{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 2rem;
-    padding-top: 5rem;
+    padding-top: 7em;
 }
 
 #reset{

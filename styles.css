@@ -1,102 +1,83 @@
-body, html{
-    margin: 0;
-    padding: 0;
-    background-color: hsl(185, 41%, 84%);
+html,body{
+	margin: 0;
+	padding: 0;
+	overflow: 0;
+	overflow-x: hidden;
+	background-color: hsl(185, 41%, 84%);
     font-family: "Space Mono";
 }
 
-.wrapper{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-}
-
 .logo-div{
-    display: flex;
-    justify-content: center;
-    margin-top: 10em;
-    margin-bottom: 5em;
+	display: flex;
+	justify-content: center;
+	margin-top: 3em;
+	margin-bottom: 3em;
 }
 
 .hero{
-    background-color: #FFFFFF;
-    width: 55em;
+	background-color: #ffff;
+	border-radius: 1.25em;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius:1.5em;
-    margin-bottom: 10em;
+    flex-direction: column;
 }
 
 .leftSection{
-    display:inline-flexbox;
-    justify-content: left;
-    align-items: flex-start;
-    padding-right: 1em;
+    display: flex;
+    flex-direction: column;
+	padding-top: 1em;
+	padding-bottom: 2em;
+    margin-left: 1.75em;
+    margin-right: 1.75em;
 }
 
 .pType1{
     color: #7a898a;
     line-height: 0;
-    font-size: 1em
+    font-size: 1em;
+    padding-top: 2em;
 }
 
 .bill{
-    margin-top: 3em;
+	padding-top: 0.75em;
 }
 
-#bill{
-    color: HSL(189°, 41%, 97%);
+#bill, #numberOfPeople{
     text-align: right;
     font-family: "Space Mono";
-    font-size: ;
     background-color: #f3f8fb;
-    color: HSL(189°, 41%, 97%);
     color: #a5b6b6;
     border: 0;
-    width: 13em;
-    height: 1.75em;
-    padding-right: 1em;
     border-radius: 0.25em;
-    margin-bottom: 2em;
+    height: 1.5em;
+    font-size: 1.5em;
+    width: 97%;
 }
-
-input:focus {
-    outline-color: hsl(172, 67%, 45%);
-  }
-
-input[type='text'] { font-size: 24px; }
 
 .divButtons{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-row: 1fr 1fr;
-    grid-gap: 0.75em;
     padding-top: 0.75em;
     padding-bottom: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:auto;
+    justify-items: center;
+    grid-gap: 1em;
 }
-
-button{
+    
+    button{
     color: hsl(189, 41%, 97%);
     background-color: hsl(183, 100%, 15%);
     border: 0;
-    width: 4.5em;
+    width: 6em;
     height: 2em;
     border-radius: 0.25em;
     font-family: "Space Mono";
     font-size: 1.5em;
     font-weight: lighter;
-}
-
-button:focus{
-    color: hsl(183, 100%, 15%);
-    background-color: hsl(172, 67%, 45%);
-}
-
-#customButton{
+    }
+    
+    #customButton{
     border: 0;
-    width: 4.5em;
+    width: 6em;
     height: 2em;
     border-radius: 0.25em;
     font-family: "Space Mono";
@@ -107,36 +88,42 @@ button:focus{
     color: HSL(189°, 41%, 97%);
 }
 
-#numberOfPeople{
-    background-image:url('images\icon-person.svg');
-    margin-bottom: 2em;
-    text-align: right;
-    font-family: "Space Mono";
-    font-size: ;
-    background-color: #f3f8fb;
-    color: #a5b6b6;
-    border: 0;
-    height: 1.75em;
-    width: 13em;
-    border-radius: 0.25em;
-    padding-right: 1em;
+    button:focus{
+    color: hsl(183, 100%, 15%);
+    background-color: hsl(172, 67%, 45%);
+}
+
+.nOfPpl{
+    padding-top: 0;
 }
 
 .rightSection{
     background-color: hsl(183, 100%, 15%);
-    width: 25em;
-    height: 25em;
-    margin-left: 2em;
     border-radius:1.25em;
+    margin-left: 1.75em;
+    margin-right: 1.75em;
+    margin-bottom: 2em;
 }
 
-.tipAmount{
-    padding-top: 2.75em;
-    padding-bottom: 1.75em;
+.rightSectionUpper{
+    display: flex;
+    overflow: hidden;
+    padding-bottom: 1.25em;
+    justify-content: space-between;
 }
 
-.tipAmount, .total{
-    padding-left: 2.5em;
+.tipAmountLeft{
+    margin-left: 2em;
+    margin-top: 2em;
+}
+
+.tipAmountRight{
+    margin-right: 2em;
+    margin-top: 1.5em;
+}
+
+.pTotal{
+    padding-top: 1.5em;
 }
 
 .pType2{
@@ -150,28 +137,8 @@ button:focus{
     font-size: 0.85em;
 }
 
-.rightSectionUpper{
-    display: flex;
-}
-
-.tipAmountLeft{
-    justify-content: left;
-    padding-left: 3em;
-    padding-top: 2em;
-}
-
-.tipAmountRight{
-    justify-content: right;
-    padding-left: 5em;
-}
-
-.pTotal{
-    padding-top: 4em;
-}
-
 .tipPerPerson, .tipTotal{
-    font-size: 3em;
-    text-align: right;
+    font-size: 2em;
     color: hsl(172, 67%, 45%);
 }
 
@@ -179,11 +146,12 @@ button:focus{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 2em;
 }
 
 #reset{
-    width: 14em;
-    height: 1.75em;
+    width: 82.5%;
+    height: 2.25em;
     border-radius: 0.25rem;
     border: none;
     background-color: #0c686d;
@@ -191,7 +159,7 @@ button:focus{
     font-family: "Space Mono";
     font-weight: 700;
     font-size: 1.5rem;
-    margin-top: 3em;
+    margin-top: 0em;
 }
 
 .resetActive{
@@ -199,61 +167,136 @@ button:focus{
     color: hsl(183, 100%, 15%);
 }
 
+@media only screen and (min-width: 600px){
 
-@media only screen and (max-width: 600px){
-    .logo-div{
+    .wrapper{
         display: flex;
         justify-content: center;
-        margin-top: 10em;
-        margin-bottom: 5em;
     }
-    
+
     .hero{
-        background-color: #FFFFFF;
-        width: 100%;
-        display: flex;
+        width: 65%;
+    }
+}
+
+@media only screen and (min-width: 992px){
+
+    body{
+        overflow: hidden;
+    }
+
+    .logo-div{
+       margin-top: 3em;
+       margin-bottom: 3em;
+    }
+
+    .hero{
+        width:auto;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
-        border-radius:1.5em;
         margin-bottom: 10em;
+        padding-top: 2em;
+        overflow: hidden;
+    }
+
+    .leftSection{
+        display: inline-flexbox;
+        justify-content: left;
+        align-items: flex-start;
+        margin-left: 2.5em;
+        padding-top: 0;
+    }
+
+    .pType1{
+        display: inline-block;
+        font-size: 1em;
+        padding-top: 2em;
+    }
+
+    .bill{
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    #bill, #numberOfPeople{
+       height: 1.75em;
+       width: 15em;
+       font-size: 1.5em;
+    }
+
+    .divButtons{    
+        padding-top: 0.75em;
+        padding-bottom: 2em;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows:auto;
+        justify-items: center;
+        grid-gap: 0.75em;
+    }
+    
+    button{
+        width: 4.5em;
+        margin: 0em;
+    }
+    
+    #customButton{
+        border: 0;
+        width: 4.5em;
+        margin: 0;
+    }
+
+    .nOfPpl{
+        padding-top: 0;
+
+    }
+
+    .rightSection{
+    width: 25em;
+    height: 23.5em;
+    margin-left: 1em;
+    }
+
+    .pType2{
+        font-size: 1em;
+        margin: 0;
+    }
+
+    .pType3{
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    .rightSectionUpper{
+        padding-top: 1.25em;
+        display: flex;
+    }
+
+    .tipAmountRight{
+        margin-top: 0;
+    }
+
+    .pTotal{
+        padding-top: 4em;
+    }
+
+    .tipPerPerson, .tipTotal{
+        font-size: 2.75em;
+    }
+
+    .tipTotal{
+        margin-top: 0;
+    }
+
+    .btnReset{
+        padding-top: 2em;
     }
 
 }
 
-
-
-
-
-@media only screen and (max-width: 1024){
-
+@media only screen and (min-width: 1200px){
+    .logo-div{
+       margin-top: 8em;
+       margin-bottom: 8em;
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); } */

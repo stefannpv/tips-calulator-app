@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
@@ -9,32 +10,33 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
-  
+
   <title>Frontend Mentor | Tip calculator app</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 
 </head>
+
 <body>
 
-    <div class="logo-div">
-        <img src="images\logo.svg" alt="Logo" id="logo">
-    </div>
+  <div class="logo-div">
+    <img src="images\logo.svg" alt="Logo" id="logo">
+  </div>
 
-    <div class="wrapper">
 
-    <div class="hero">
+<div class="wrapper">
+  <div class="hero">
 
-      <div class="leftSection">
-        <p class="pType1 bill">Bill</p>
-        <div>
-          <!-- <i src="images\icon-dollar.svg"></i> -->
-          <input type="text" id="bill" name="Bill" value="$                  0" onfocus="this.value=''"> 
-        </div>
-  
-        <!-- required
+    <div class="leftSection">
+      <p class="pType1 bill">Bill</p>
+      <div>
+        <!-- <i src="images\icon-dollar.svg"></i> -->
+        <input type="text" id="bill" name="Bill" value="0" onfocus="this.value=''">
+      </div>
+
+      <!-- required
         minlength="1" maxlength="8" size="20"> -->
-    
+
       <p class="pType1">Select Tip %</p>
       <div class="divButtons">
         <button id="1">5%</button>
@@ -44,48 +46,47 @@
         <button id="5">50%</button>
         <input type="text" id="customButton" name="Custom" value="Custom" onfocus="this.value=''">
       </div>
-    
-      <p class="pType1">Number of People</p>
+
+      <p class="pType1 nOfPpl">Number of People</p>
       <form action="">
-      <div>
-        <input type="text" id="numberOfPeople" name="numberOfPeople" value="0" onfocus="this.value=''">
-      </div>
-    </form>
-
-      </div>
-        
-
-<div class="rightSection">
-
-    <div class="rightSectionUpper">
-      <div class="tipAmountLeft">
-        <p class="pType2">Tip Amount</p>
-        <p class="pType3">/ person</p>
-        <p class="pType2 pTotal">Total</p>
-        <p class="pType3">/ person</p>
-      </div>
-      
-        <div class="tipAmountRight">
-        <h1 class="tipPerPerson">$0.00</h1>
-        <h1 class="tipTotal">$0.00</h1>
+        <div>
+          <input type="text" id="numberOfPeople" name="numberOfPeople" value="0" onfocus="this.value=''">
         </div>
-</div>
+      </form>
 
-    <div class="btnReset">
+    </div>
+
+
+    <div class="rightSection">
+
+      <div class="rightSectionUpper">
+        <div class="tipAmountLeft">
+          <p class="pType2 tipAmount">Tip Amount</p>
+          <p class="pType3">/ person</p>
+          <p class="pType2 pTotal">Total</p>
+          <p class="pType3">/ person</p>
+        </div>
+
+        <div class="tipAmountRight">
+          <h1 class="tipPerPerson">$0.00</h1>
+          <h1 class="tipTotal">$0.00</h1>
+        </div>
+      </div>
+
+      <div class="btnReset">
         <button id="reset">RESET</button>
+      </div>
+
     </div>
 
+  </div>
 </div>
- 
-    </div>
-
-</div>
-
   <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
 
   <script type="text/javascript" src="scripts.js"></script>
 </body>
+
 </html>

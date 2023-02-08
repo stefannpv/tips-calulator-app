@@ -13,8 +13,6 @@
 
   <title>Frontend Mentor | Tip calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-
 </head>
 
 <body>
@@ -24,63 +22,60 @@
   </div>
 
 
-<div class="wrapper">
-  <div class="hero">
+  <div class="wrapper">
+    <div class="hero">
 
-    <div class="leftSection">
-      <p class="pType1 bill">Bill</p>
-      <div>
-        <!-- <i src="images\icon-dollar.svg"></i> -->
-        <input type="text" id="bill" name="Bill" value="0" onfocus="this.value=''">
-      </div>
-
-      <!-- required
-        minlength="1" maxlength="8" size="20"> -->
-
-      <p class="pType1">Select Tip %</p>
-      <div class="divButtons">
-        <button id="1">5%</button>
-        <button id="2">10%</button>
-        <button id="3">15%</button>
-        <button id="4">25%</button>
-        <button id="5">50%</button>
-        <input type="text" id="customButton" name="Custom" value="Custom" onfocus="this.value=''">
-      </div>
-
-      <p class="pType1 nOfPpl">Number of People</p>
-      <form action="">
+      <div class="leftSection">
+        <p class="pType1 bill">Bill</p>
         <div>
-          <input type="text" id="numberOfPeople" name="numberOfPeople" value="0" onfocus="this.value=''">
-        </div>
-      </form>
-
-    </div>
-
-
-    <div class="rightSection">
-
-      <div class="rightSectionUpper">
-        <div class="tipAmountLeft">
-          <p class="pType2 tipAmount">Tip Amount</p>
-          <p class="pType3">/ person</p>
-          <p class="pType2 pTotal">Total</p>
-          <p class="pType3">/ person</p>
+          <!-- <i src="images\icon-dollar.svg"></i> -->
+          <input type="text" id="bill" name="Bill" value="0" onfocus="this.value=''">
         </div>
 
-        <div class="tipAmountRight">
-          <h1 class="tipPerPerson">$0.00</h1>
-          <h1 class="tipTotal">$0.00</h1>
+        <p class="pType1">Select Tip %</p>
+        <div class="divButtons">
+          <button id="one">5%</button>
+          <button id="two">10%</button>
+          <button id="three">15%</button>
+          <button id="four">25%</button>
+          <button id="five">50%</button>
+          <input type="text" id="customButton" name="Custom" value="Custom" onfocus="this.value=''">
         </div>
+
+        <p class="pType1 nOfPpl">Number of People</p>
+        <!-- <form action=""> -->
+          <div>
+            <input type="text" id="numberOfPeople" name="numberOfPeople" value="0" onfocus="this.value=''">
+          </div>
+        <!-- </form> -->
+
       </div>
 
-      <div class="btnReset">
-        <button id="reset">RESET</button>
+
+      <div class="rightSection">
+
+        <div class="rightSectionUpper">
+          <div class="tipAmountLeft">
+            <p class="pType2 tipAmount">Tip Amount</p>
+            <p class="pType3">/ person</p>
+            <p class="pType2 pTotal">Total</p>
+            <p class="pType3">/ person</p>
+          </div>
+
+          <div class="tipAmountRight">
+            <h1 class="tipPerPerson">$0.00</h1>
+            <h1 class="tipTotal">$0.00</h1>
+          </div>
+        </div>
+
+        <div class="btnReset">
+          <button id="reset" class="resett">RESET</button>
+        </div>
+
       </div>
 
     </div>
-
   </div>
-</div>
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.

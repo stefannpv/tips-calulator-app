@@ -53,9 +53,9 @@ html, body {
   width: 97%;
 }
 
-/*#bill:focus {
+#bill:focus {
 }
-*/
+
 .divButtons {
   padding-top: 0.75em;
   padding-bottom: 2em;
@@ -80,7 +80,7 @@ button {
 
 #customButton {
   border: 0;
-  width: 6em;
+  width: 5.9em;
   height: 2em;
   border-radius: 0.25em;
   font-family: "Space Mono";

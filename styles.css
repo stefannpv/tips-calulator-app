@@ -53,6 +53,9 @@ html, body {
   width: 97%;
 }
 
+/*#bill:focus {
+}
+*/
 .divButtons {
   padding-top: 0.75em;
   padding-bottom: 2em;

@@ -74,12 +74,42 @@ function mega() {
 // document.querySelector('#reset').classList.add(".resetActive");
 
 
-let reset = document.getElementById('reset');
+// let reset = document.getElementById('reset');
 
-document.addEventListener.onclick = function() {
-  if ( ( (+bill) > 0 ) && ( (+numberPeople) > 0 )) {
-  reset.classList.add("resetActive");
-}}
+// document.addEventListener.onclick = function() {
+//   if ( ( (+bill) > 0 ) && ( (+numberPeople) > 0 )) {
+//   reset.classList.add("resetActive");
+// }}
 
 
-function clear(){}
+const buttonReset = document.getElementById('reset'); 
+
+  buttonReset.addEventListener('click', function() {
+    document.querySelector('#bill').value = "0";
+    document.querySelector('#numberOfPeople').value = "0";
+    document.querySelector('#customButton').value = "Custom";
+    document.querySelector('.tipPerPerson').innerHTML = "$0.00";
+    document.querySelector('.tipTotal').innerHTML = "$0.00";
+    let bill = '';
+    let numberPeople = '';
+    let selectedPercent = '';
+});
+
+
+// document.querySelector('#bill').addEventListener
+
+
+// function required() {
+// var empt = document.getElementById('bill').value;
+// if (empt == "")
+// {
+// function addInput(){
+// let billl = document.getElementById('bill')
+// bill.classList.add('borderRed');
+// }
+// }
+// else 
+// {
+// buttonReset.classList.add('resetActive');
+// }
+// }

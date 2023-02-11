@@ -12,45 +12,43 @@ function getNumber() {
   return(numberPeople);
 }
 
+
+        // Percent Buttons
 document.querySelector('#one').onclick = function() {
   selectedPercent = 5;
-  mega();
+  calculate();
 }
-
 document.querySelector('#two').onclick = function() {
   selectedPercent = 10;
-  mega();
+  calculate();
 }
-
 document.querySelector('#three').onclick = function() {
   selectedPercent = 15;
-  mega();
+  calculate();
 }
-
 document.querySelector('#four').onclick = function() {
   selectedPercent = 25;
-  mega();
+  calculate();
 }
-
 document.querySelector('#five').onclick = function() {
   selectedPercent = 50;
-  mega();
+  calculate();
 }
-
-let custom = document.getElementById('customButton')
+const custom = document.getElementById('customButton')
   custom.addEventListener('keyup', (e) =>{
   if (e.code === "Enter") {
     let customTip = document.querySelector('#customButton').value
     selectedPercent = customTip;
-    mega()
+    calculate()
   }
 })
 
 
+        // Calculate Function
 let tipAmount = ""
 let total = ""
 
-function mega() {
+function calculate() {
   getBill();
   getNumber();
   let tipAmountUnrounded = ((+bill) * (+selectedPercent) / 100) / (+numberPeople);
@@ -64,52 +62,46 @@ function mega() {
 }
 
 
-
-// function f() {if ( (theBill) > 1 && (numberPeople) > 1) {
-//   let reset = document.getElementById('reset');
-//   reset.classList.add("resetActive");
-// }
-// }
-
-// document.querySelector('#reset').classList.add(".resetActive");
-
-
-// let reset = document.getElementById('reset');
-
-// document.addEventListener.onclick = function() {
-//   if ( ( (+bill) > 0 ) && ( (+numberPeople) > 0 )) {
-//   reset.classList.add("resetActive");
-// }}
-
-
-const buttonReset = document.getElementById('reset'); 
-
-  buttonReset.addEventListener('click', function() {
-    document.querySelector('#bill').value = "0";
-    document.querySelector('#numberOfPeople').value = "0";
-    document.querySelector('#customButton').value = "Custom";
-    document.querySelector('.tipPerPerson').innerHTML = "$0.00";
-    document.querySelector('.tipTotal').innerHTML = "$0.00";
-    let bill = '';
-    let numberPeople = '';
-    let selectedPercent = '';
+        // Button Reset
+const buttonReset = document.getElementById('reset');
+buttonReset.classList.add('resetActive');
+buttonReset.addEventListener('click', function() {
+  document.querySelector('#bill').value = "0";
+  document.querySelector('#numberOfPeople').value = "0";
+  document.querySelector('#customButton').value = "Custom";
+  document.querySelector('.tipPerPerson').innerHTML = "$0.00";
+  document.querySelector('.tipTotal').innerHTML = "$0.00";
+  let bill = '';
+  let numberPeople = '';
+  let selectedPercent = '';
 });
 
 
-// document.querySelector('#bill').addEventListener
+        // Cyan Outline When Focused
+const billl = document.querySelector('#bill')
+const noOfppl = document.querySelector('#numberOfPeople')
+
+billl.addEventListener('focus', (event) => {
+  event.target.style.outlineColor = 'hsl(172, 67%, 45%)';
+});
+
+noOfppl.addEventListener('focus', (event) => {
+  event.target.style.outlineColor = 'hsl(172, 67%, 45%)';
+});
+
+custom.addEventListener('focus', (event) => {
+  event.target.style.outlineColor = 'hsl(172, 67%, 45%)';
+});
 
 
-// function required() {
-// var empt = document.getElementById('bill').value;
-// if (empt == "")
-// {
-// function addInput(){
-// let billl = document.getElementById('bill')
-// bill.classList.add('borderRed');
-// }
-// }
-// else 
-// {
-// buttonReset.classList.add('resetActive');
-// }
-// }
+        // Focused Input Color
+billl.addEventListener('focus', (event) => {
+  event.target.style.color = '#004341';
+});
+noOfppl.addEventListener('focus', (event) => {
+  event.target.style.color = '#004341';
+});
+custom.addEventListener('focus', (event) => {
+  event.target.style.color = '#004341';
+});
+

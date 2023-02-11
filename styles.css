@@ -53,7 +53,9 @@ html, body {
   width: 97%;
 }
 
-#bill:focus {
+.borderRed{
+  outline-color: #CD0404;
+  border: 1;
 }
 
 .divButtons {
